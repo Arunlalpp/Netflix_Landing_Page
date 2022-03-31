@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+	<meta name="vieport" content="width=device-width, initial-scale=1.0">
+	<title>Netflix</title>
+	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+<body>
+<header>
+	<a href="#" class="logo"><img src="Images/logo 3.png"></a>
+	<ul class="navigation">
+		<li><a href="#">Home</a></li>
+		<li><a href="#">TV Shows</a></li>
+		<li><a href="#">Movies</a></li>
+		<li><a href="#">Latest</a></li>
+		<li><a href="#">My List</a></li>
+	</ul>
+	<div class="search">
+		<input type="text" placeholder="Search">
+		<i class="fa fa-search"></i>
+	</div>
+</header>
+<div class="banner">
+	<img src="Images/psd1.jpg" class="bg">
+	<div class="content">
+		<img src="Images/psd2.jpg" class="movietitle">
+		<h4>
+			<span>2013</span>
+			<span><i>12+</i></span>
+			<span>1h 55Min</span>
+			<span>Action</span>
+		</h4>
+		<p>Tommy Shelby, a dangerous man, leads the Peaky Blinders, a gang based in Birmingham. Soon, Chester Campbell, an inspector, decides to nab him and put an end to the criminal activities.</p>
+		<div class="button">
+			<a href="#"><i class="fa fa-play"></i>Play</a>
+			<a href="#"><i class="fa fa-plus"></i>My List</a>
+		</div>
+</div>
+<a class="play" onclick="toggleVideo();"><img src="Images/play.png"><i class="fa fa-play-circle-o"></i>Watch Trailer</a>
+</div>
+<div class="trailer">
+	<video src="Trailer.mp4" controls="true" autoplay="true"></video>
+	<img src="Images/close.png" class="close" onclick="toggleVideo();">
+</div> 
+
+<script>
+
+
+	fuction toggleVideo(){
+		const trailer = document.querySelector('.trailer');
+		trailer .classList.toggle('active')
+	} 
+
+
+</script>
+</body>
+</html>
